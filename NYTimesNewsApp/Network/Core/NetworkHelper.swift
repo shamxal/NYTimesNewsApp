@@ -21,7 +21,7 @@ enum ErrorTypes: String, Error {
 class NetworkHelper {
     static let shared = NetworkHelper()
     
-    let baseURL = "https://jsonplaceholder.typicode.com/"
+    let baseURL = "https://api.nytimes.com/svc"
     
     let header = ["Auth": "Bearer "]
     
