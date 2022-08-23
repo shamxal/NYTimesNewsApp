@@ -14,6 +14,10 @@
 		477F75A128B522E3007D502B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 477F75A028B522E3007D502B /* Assets.xcassets */; };
 		477F75A428B522E3007D502B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477F75A228B522E3007D502B /* LaunchScreen.storyboard */; };
 		477F75C428B526FD007D502B /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75C328B526FD007D502B /* UIImageView+Ext.swift */; };
+		477F75C828B52ABB007D502B /* ArchiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75C728B52ABB007D502B /* ArchiveController.swift */; };
+		477F75CB28B52AD6007D502B /* ArchiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75C928B52AD6007D502B /* ArchiveCell.swift */; };
+		477F75CC28B52AD6007D502B /* ArchiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477F75CA28B52AD6007D502B /* ArchiveCell.xib */; };
+		477F75CF28B52BAD007D502B /* ArchiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75CE28B52BAD007D502B /* ArchiveViewModel.swift */; };
 		738AAF518C4E315F9DAEA839 /* Pods_NYTimesNewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12B50336B5F00ADC1F10F7E /* Pods_NYTimesNewsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		477F75A328B522E3007D502B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		477F75A528B522E3007D502B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		477F75C328B526FD007D502B /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		477F75C728B52ABB007D502B /* ArchiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveController.swift; sourceTree = "<group>"; };
+		477F75C928B52AD6007D502B /* ArchiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveCell.swift; sourceTree = "<group>"; };
+		477F75CA28B52AD6007D502B /* ArchiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveCell.xib; sourceTree = "<group>"; };
+		477F75CE28B52BAD007D502B /* ArchiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewModel.swift; sourceTree = "<group>"; };
 		E12B50336B5F00ADC1F10F7E /* Pods_NYTimesNewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesNewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +109,8 @@
 		477F75AD28B525A7007D502B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				477F75CD28B52B2F007D502B /* Cell */,
+				477F75C728B52ABB007D502B /* ArchiveController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +118,7 @@
 		477F75AE28B525AB007D502B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				477F75CE28B52BAD007D502B /* ArchiveViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -269,6 +280,15 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		477F75CD28B52B2F007D502B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				477F75C928B52AD6007D502B /* ArchiveCell.swift */,
+				477F75CA28B52AD6007D502B /* ArchiveCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		6175EA71756A046FF820FA36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +368,7 @@
 			files = (
 				477F75A428B522E3007D502B /* LaunchScreen.storyboard in Resources */,
 				477F75A128B522E3007D502B /* Assets.xcassets in Resources */,
+				477F75CC28B52AD6007D502B /* ArchiveCell.xib in Resources */,
 				477F759C28B522E1007D502B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +424,10 @@
 			files = (
 				477F75C428B526FD007D502B /* UIImageView+Ext.swift in Sources */,
 				477F759528B522E1007D502B /* AppDelegate.swift in Sources */,
+				477F75CB28B52AD6007D502B /* ArchiveCell.swift in Sources */,
+				477F75CF28B52BAD007D502B /* ArchiveViewModel.swift in Sources */,
 				477F759F28B522E1007D502B /* NYTimesNewsApp.xcdatamodeld in Sources */,
+				477F75C828B52ABB007D502B /* ArchiveController.swift in Sources */,
 				477F759728B522E1007D502B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
