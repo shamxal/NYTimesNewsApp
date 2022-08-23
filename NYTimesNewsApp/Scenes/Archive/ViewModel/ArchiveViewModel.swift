@@ -8,7 +8,7 @@
 import Foundation
 
 class ArchiveViewModel {
-    var items = [ArchiveResponseDoc]()
+    var items = [Article]()
     
     var successCallback: (()->())?
     var errorCallback: ((String)->())?

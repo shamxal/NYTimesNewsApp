@@ -15,20 +15,26 @@ struct Archive: Codable {
 
 // MARK: - ArchiveResponse
 struct ArchiveResponse: Codable {
-    let docs: [ArchiveResponseDoc]?
+    let docs: [Article]?
+    let meta: Meta?
 }
 
-// MARK: - ArchiveResponseDoc
-struct ArchiveResponseDoc: Codable {
+// MARK: - Meta
+struct Meta: Codable {
+    let hits: Int?
+}
+
+// MARK: - Article
+struct Article: Codable {
     let abstract: String?
     let webURL: String?
     let snippet, leadParagraph, printSection: String?
-    let printPage: Int?
+    let printPage: String?
     let source: String?
     let multimedia: [Multimedia]?
     let headline: Headline?
     let keywords: [Keyword]?
-    let pubDate: Date?
+    let pubDate: String?
     let documentType, newsDesk, sectionName, subsectionName: String?
     let byline: Byline?
     let typeOfMaterial, id: String?
