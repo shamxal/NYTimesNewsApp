@@ -25,7 +25,7 @@ struct Meta: Codable {
 }
 
 // MARK: - Article
-struct Article: Codable {
+struct Article: Codable, ArchiveCellProtocol {
     let abstract: String?
     let webURL: String?
     let snippet, leadParagraph, printSection: String?
@@ -40,6 +40,18 @@ struct Article: Codable {
     let typeOfMaterial, id: String?
     let wordCount: Int?
     let uri: String?
+    
+    var imageURL: String {
+        "\(NetworkHelper.shared.imageBaseURL)\(multimedia?.first?.url ?? "")"
+    }
+    
+    var titleText: String {
+        abstract ?? ""
+    }
+    
+    var descText: String {
+        leadParagraph ?? ""
+    }
 
     enum CodingKeys: String, CodingKey {
         case abstract

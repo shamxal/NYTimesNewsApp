@@ -23,6 +23,8 @@ class NetworkHelper {
     
     let baseURL = "https://api.nytimes.com/svc"
     
+    let imageBaseURL = "https://static01.nyt.com/"
+    
     let header = ["Auth": "Bearer "]
     
     func saveToken(token: String) {

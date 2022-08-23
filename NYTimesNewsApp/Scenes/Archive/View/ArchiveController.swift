@@ -43,7 +43,7 @@ extension ArchiveController: UICollectionViewDataSource, UICollectionViewDelegat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ArchiveCell.self)", for: indexPath) as! ArchiveCell
-        cell.backgroundColor = .orange
+        cell.configure(data: viewModel.items[indexPath.item])
         return cell
     }
     
