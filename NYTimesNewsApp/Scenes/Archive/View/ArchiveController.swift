@@ -9,6 +9,7 @@ import UIKit
 
 class ArchiveController: UIViewController {
 
+    @IBOutlet private weak var searchTextField: UITextField!
     @IBOutlet private weak var collection: UICollectionView!
     
     let viewModel = ArchiveViewModel()
@@ -21,18 +22,26 @@ class ArchiveController: UIViewController {
     }
     
     fileprivate func setup() {
+        searchTextField.becomeFirstResponder()
         collection.register(UINib(nibName: "\(ArchiveCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(ArchiveCell.self)")
     }
     
     func configViewModel() {
-        viewModel.getList()
+//        showLoader()
+//        viewModel.getList()      
         viewModel.errorCallback = { message in
-            //show in alert
+            self.dismissLoader()
+            self.showAlert(message: message) {}
         }
         
         viewModel.successCallback = {
+            self.dismissLoader()
             self.collection.reloadData()
         }
+    }
+    
+    @IBAction func searchText(_ sender: UITextField) {
+        viewModel.searchArticles(text: sender.text ?? "")
     }
 }
 
@@ -48,11 +57,23 @@ extension ArchiveController: UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+//        showInSafari(url: viewModel.items[indexPath.item].webURL ?? "")
+        let controller = storyboard?.instantiateViewController(withIdentifier: "\(CategoryController.self)") as! CategoryController
+        controller.selectionCallback = { title in
+            self.viewModel.searchCategoiry(category: title)
+        }
+        show(controller, sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.width, height: 150)
     }
     //TODO: sizeForRowAtItem
+}
+
+extension ArchiveController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

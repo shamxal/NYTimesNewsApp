@@ -115,12 +115,12 @@ struct Multimedia: Codable {
     let url: String?
     let height, width: Int?
     let subType, cropName: String?
-//    let legacy: Legacy?
+    let legacy: Legacy?
 
     enum CodingKeys: String, CodingKey {
         case rank, subtype, caption, credit, type, url, height, width, subType
         case cropName = "crop_name"
-//        case legacy
+        case legacy
     }
 }
 

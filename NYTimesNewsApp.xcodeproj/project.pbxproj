@@ -22,6 +22,8 @@
 		477F75D328B53606007D502B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75D128B53606007D502B /* NetworkManager.swift */; };
 		477F75D628B53833007D502B /* ArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75D528B53833007D502B /* ArchiveManager.swift */; };
 		477F75D828B539AB007D502B /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75D728B539AB007D502B /* Archive.swift */; };
+		47A6756C28B7CAD600D709CA /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A6756B28B7CAD600D709CA /* UIViewController+Ext.swift */; };
+		47A6756E28B7D96E00D709CA /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A6756D28B7D96E00D709CA /* CategoryController.swift */; };
 		738AAF518C4E315F9DAEA839 /* Pods_NYTimesNewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12B50336B5F00ADC1F10F7E /* Pods_NYTimesNewsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		477F75D128B53606007D502B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		477F75D528B53833007D502B /* ArchiveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveManager.swift; sourceTree = "<group>"; };
 		477F75D728B539AB007D502B /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		47A6756B28B7CAD600D709CA /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		47A6756D28B7D96E00D709CA /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryController.swift; path = NYTimesNewsApp/Scenes/Archive/View/CategoryController.swift; sourceTree = SOURCE_ROOT; };
 		E12B50336B5F00ADC1F10F7E /* Pods_NYTimesNewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesNewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,7 @@
 			children = (
 				477F75CD28B52B2F007D502B /* Cell */,
 				477F75C728B52ABB007D502B /* ArchiveController.swift */,
+				47A6756D28B7D96E00D709CA /* CategoryController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				477F75C328B526FD007D502B /* UIImageView+Ext.swift */,
+				47A6756B28B7CAD600D709CA /* UIViewController+Ext.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -443,7 +449,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				477F75D328B53606007D502B /* NetworkManager.swift in Sources */,
+				47A6756E28B7D96E00D709CA /* CategoryController.swift in Sources */,
 				477F75D228B53606007D502B /* NetworkHelper.swift in Sources */,
+				47A6756C28B7CAD600D709CA /* UIViewController+Ext.swift in Sources */,
 				477F75D628B53833007D502B /* ArchiveManager.swift in Sources */,
 				477F75C428B526FD007D502B /* UIImageView+Ext.swift in Sources */,
 				477F759528B522E1007D502B /* AppDelegate.swift in Sources */,

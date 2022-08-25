@@ -23,4 +23,21 @@ class ArchiveViewModel {
             }
         }
     }
+    
+    func searchArticles(text: String) {
+        ArchiveManager.shared.searchArchive(text: text) { items, errorMessage in
+            if let errorMessage = errorMessage {
+                self.errorCallback?(errorMessage)
+            } else if let docs = items?.response?.docs {
+                self.items = docs
+                self.successCallback?()
+            }
+        }
+    }
+    
+    func searchCategoiry(lang: String = "", category: String = "") {
+        ArchiveManager.shared.searchArchive(lang: lang, category: category) { _, _ in
+            
+        }
+    }
 }
