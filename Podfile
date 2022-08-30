@@ -8,6 +8,6 @@ target 'NYTimesNewsApp' do
   pod 'Alamofire'
   pod 'SDWebImage', '~> 5.0'
   pod 'ProgressHUD'
-  pod 'KeychainAccess'
+  pod 'KeychainSwift', '~> 20.0'
 
 end

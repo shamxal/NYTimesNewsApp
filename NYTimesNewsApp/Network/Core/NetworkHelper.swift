@@ -25,9 +25,9 @@ class NetworkHelper {
     
     let imageBaseURL = "https://static01.nyt.com/"
     
-    let header = ["Auth": "Bearer "]
+    let header = ["X-Session": KeychainHelper.get(key: .token)]
     
     func saveToken(token: String) {
-        
+        KeychainHelper.save(value: token, key: .token)        
     }
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4746523828BE606B008C6628 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746523728BE606B008C6628 /* KeychainHelper.swift */; };
+		4746523A28BE6460008C6628 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746523928BE6460008C6628 /* UserDefaultsHelper.swift */; };
+		4746524128BE70C4008C6628 /* ArchiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4746524328BE70C4008C6628 /* ArchiveCell.xib */; };
+		4746524A28BE7119008C6628 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4746524C28BE7119008C6628 /* Localizable.strings */; };
+		4746524F28BE72A4008C6628 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746524E28BE72A4008C6628 /* String+Ext.swift */; };
 		477F759528B522E1007D502B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F759428B522E1007D502B /* AppDelegate.swift */; };
 		477F759728B522E1007D502B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F759628B522E1007D502B /* SceneDelegate.swift */; };
 		477F759C28B522E1007D502B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477F759A28B522E1007D502B /* Main.storyboard */; };
@@ -16,7 +21,6 @@
 		477F75C428B526FD007D502B /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75C328B526FD007D502B /* UIImageView+Ext.swift */; };
 		477F75C828B52ABB007D502B /* ArchiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75C728B52ABB007D502B /* ArchiveController.swift */; };
 		477F75CB28B52AD6007D502B /* ArchiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75C928B52AD6007D502B /* ArchiveCell.swift */; };
-		477F75CC28B52AD6007D502B /* ArchiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477F75CA28B52AD6007D502B /* ArchiveCell.xib */; };
 		477F75CF28B52BAD007D502B /* ArchiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75CE28B52BAD007D502B /* ArchiveViewModel.swift */; };
 		477F75D228B53606007D502B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75D028B53606007D502B /* NetworkHelper.swift */; };
 		477F75D328B53606007D502B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F75D128B53606007D502B /* NetworkManager.swift */; };
@@ -30,6 +34,17 @@
 /* Begin PBXFileReference section */
 		373FED54D00E3F034FC08DCC /* Pods-NYTimesNewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesNewsApp.debug.xcconfig"; path = "Target Support Files/Pods-NYTimesNewsApp/Pods-NYTimesNewsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3C86375C63857021845083FE /* Pods-NYTimesNewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesNewsApp.release.xcconfig"; path = "Target Support Files/Pods-NYTimesNewsApp/Pods-NYTimesNewsApp.release.xcconfig"; sourceTree = "<group>"; };
+		4746523728BE606B008C6628 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		4746523928BE6460008C6628 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		4746523D28BE6FBB008C6628 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		4746523E28BE6FBB008C6628 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4746524028BE700E008C6628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4746524228BE70C4008C6628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ArchiveCell.xib; sourceTree = "<group>"; };
+		4746524528BE70C7008C6628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ArchiveCell.strings; sourceTree = "<group>"; };
+		4746524728BE70C9008C6628 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/ArchiveCell.strings; sourceTree = "<group>"; };
+		4746524B28BE7119008C6628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4746524D28BE711C008C6628 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4746524E28BE72A4008C6628 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		477F759128B522E1007D502B /* NYTimesNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477F759428B522E1007D502B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		477F759628B522E1007D502B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +56,6 @@
 		477F75C328B526FD007D502B /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		477F75C728B52ABB007D502B /* ArchiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveController.swift; sourceTree = "<group>"; };
 		477F75C928B52AD6007D502B /* ArchiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveCell.swift; sourceTree = "<group>"; };
-		477F75CA28B52AD6007D502B /* ArchiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveCell.xib; sourceTree = "<group>"; };
 		477F75CE28B52BAD007D502B /* ArchiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewModel.swift; sourceTree = "<group>"; };
 		477F75D028B53606007D502B /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		477F75D128B53606007D502B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -95,6 +109,7 @@
 				477F75A228B522E3007D502B /* LaunchScreen.storyboard */,
 				477F75A528B522E3007D502B /* Info.plist */,
 				477F759D28B522E1007D502B /* NYTimesNewsApp.xcdatamodeld */,
+				4746524C28BE7119008C6628 /* Localizable.strings */,
 			);
 			path = NYTimesNewsApp;
 			sourceTree = "<group>";
@@ -276,6 +291,9 @@
 			children = (
 				477F75C328B526FD007D502B /* UIImageView+Ext.swift */,
 				47A6756B28B7CAD600D709CA /* UIViewController+Ext.swift */,
+				4746523728BE606B008C6628 /* KeychainHelper.swift */,
+				4746523928BE6460008C6628 /* UserDefaultsHelper.swift */,
+				4746524E28BE72A4008C6628 /* String+Ext.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -302,7 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				477F75C928B52AD6007D502B /* ArchiveCell.swift */,
-				477F75CA28B52AD6007D502B /* ArchiveCell.xib */,
+				4746524328BE70C4008C6628 /* ArchiveCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -376,6 +394,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 477F758828B522E1007D502B;
 			productRefGroup = 477F759228B522E1007D502B /* Products */;
@@ -392,9 +411,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4746524A28BE7119008C6628 /* Localizable.strings in Resources */,
 				477F75A428B522E3007D502B /* LaunchScreen.storyboard in Resources */,
 				477F75A128B522E3007D502B /* Assets.xcassets in Resources */,
-				477F75CC28B52AD6007D502B /* ArchiveCell.xib in Resources */,
+				4746524128BE70C4008C6628 /* ArchiveCell.xib in Resources */,
 				477F759C28B522E1007D502B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4746523A28BE6460008C6628 /* UserDefaultsHelper.swift in Sources */,
 				477F75D328B53606007D502B /* NetworkManager.swift in Sources */,
 				47A6756E28B7D96E00D709CA /* CategoryController.swift in Sources */,
 				477F75D228B53606007D502B /* NetworkHelper.swift in Sources */,
@@ -459,7 +480,9 @@
 				477F75CF28B52BAD007D502B /* ArchiveViewModel.swift in Sources */,
 				477F759F28B522E1007D502B /* NYTimesNewsApp.xcdatamodeld in Sources */,
 				477F75C828B52ABB007D502B /* ArchiveController.swift in Sources */,
+				4746523828BE606B008C6628 /* KeychainHelper.swift in Sources */,
 				477F759728B522E1007D502B /* SceneDelegate.swift in Sources */,
+				4746524F28BE72A4008C6628 /* String+Ext.swift in Sources */,
 				477F75D828B539AB007D502B /* Archive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,10 +490,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4746524328BE70C4008C6628 /* ArchiveCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4746524228BE70C4008C6628 /* Base */,
+				4746524528BE70C7008C6628 /* en */,
+				4746524728BE70C9008C6628 /* tr */,
+			);
+			name = ArchiveCell.xib;
+			sourceTree = "<group>";
+		};
+		4746524C28BE7119008C6628 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4746524B28BE7119008C6628 /* en */,
+				4746524D28BE711C008C6628 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		477F759A28B522E1007D502B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				477F759B28B522E1007D502B /* Base */,
+				4746523D28BE6FBB008C6628 /* tr */,
+				4746524028BE700E008C6628 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -479,6 +523,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				477F75A328B522E3007D502B /* Base */,
+				4746523E28BE6FBB008C6628 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -490,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -551,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

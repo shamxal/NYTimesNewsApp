@@ -22,6 +22,10 @@ class ArchiveController: UIViewController {
     }
     
     fileprivate func setup() {
+        title?.localize(key: .archiveList)
+//        title = NSLocalizedString("archiveTitle", comment: "")
+        searchTextField.placeholder = NSLocalizedString("typing", comment: "")
+        
         searchTextField.becomeFirstResponder()
         collection.register(UINib(nibName: "\(ArchiveCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(ArchiveCell.self)")
     }

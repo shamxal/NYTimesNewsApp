@@ -173,11 +173,11 @@
             </objects>
             <point key="canvasLocation" x="508.69565217391306" y="-801.5625"/>
         </scene>
-        <!--Most Popular-->
+        <!--Populyar-->
         <scene sceneID="Iz9-jw-MlA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c5P-GO-Cdn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Most Popular" image="star.circle" catalog="system" id="52c-U9-pXy"/>
+                    <tabBarItem key="tabBarItem" title="Populyar" image="star.circle" catalog="system" id="52c-U9-pXy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kUw-ag-nJe">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
