@@ -35,6 +35,7 @@ class CategoryController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
         cell.textLabel?.text = items[indexPath.row].name
+        cell.textLabel?.font = Fonts.getFont(name: .blackItalic, size: 20)
         return cell
     }
     

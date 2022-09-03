@@ -7,7 +7,14 @@ target 'NYTimesNewsApp' do
 
   pod 'Alamofire'
   pod 'SDWebImage', '~> 5.0'
-  pod 'ProgressHUD'
+  pod 'PanModal'
   pod 'KeychainSwift', '~> 20.0'
-
+  pod 'Localize-Swift', '~> 3.2'
+  pod 'OneSignalXCFramework', '>= 3.0.0', '< 4.0'
+  
+  target 'OneSignalNotificationServiceExtension' do
+      # Comment the next line if you don't want to use dynamic frameworks
+      use_frameworks!
+      pod 'OneSignalXCFramework', '>= 3.0.0', '< 4.0'
+  end
 end
