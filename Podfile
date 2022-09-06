@@ -12,6 +12,10 @@ target 'NYTimesNewsApp' do
   pod 'Localize-Swift', '~> 3.2'
   pod 'OneSignalXCFramework', '>= 3.0.0', '< 4.0'
   
+  pod 'FirebaseCore'
+  pod 'FirebaseFirestore'
+  
+  
   target 'OneSignalNotificationServiceExtension' do
       # Comment the next line if you don't want to use dynamic frameworks
       use_frameworks!

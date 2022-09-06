@@ -72,7 +72,6 @@ extension ArchiveController: UICollectionViewDataSource, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.width, height: 150)
     }
-    //TODO: sizeForRowAtItem
 }
 
 extension ArchiveController: UITextFieldDelegate {
