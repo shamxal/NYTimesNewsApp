@@ -36,6 +36,9 @@
 		4746524128BE70C4008C6628 /* ArchiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4746524328BE70C4008C6628 /* ArchiveCell.xib */; };
 		4746524A28BE7119008C6628 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4746524C28BE7119008C6628 /* Localizable.strings */; };
 		4746524F28BE72A4008C6628 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746524E28BE72A4008C6628 /* String+Ext.swift */; };
+		4753876F28D5CC5B00CDB693 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753876E28D5CC5A00CDB693 /* UIView+Ext.swift */; };
+		4753877128D5CE0200CDB693 /* CreateNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753877028D5CE0200CDB693 /* CreateNewsViewModel.swift */; };
+		477460CF28D5951300AA185B /* CreateNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477460CE28D5951300AA185B /* CreateNewsController.swift */; };
 		477F759528B522E1007D502B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F759428B522E1007D502B /* AppDelegate.swift */; };
 		477F759728B522E1007D502B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F759628B522E1007D502B /* SceneDelegate.swift */; };
 		477F759C28B522E1007D502B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477F759A28B522E1007D502B /* Main.storyboard */; };
@@ -121,6 +124,9 @@
 		4746524B28BE7119008C6628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4746524D28BE711C008C6628 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4746524E28BE72A4008C6628 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		4753876E28D5CC5A00CDB693 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		4753877028D5CE0200CDB693 /* CreateNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewsViewModel.swift; sourceTree = "<group>"; };
+		477460CE28D5951300AA185B /* CreateNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewsController.swift; sourceTree = "<group>"; };
 		477F759128B522E1007D502B /* NYTimesNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477F759428B522E1007D502B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		477F759628B522E1007D502B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +211,26 @@
 			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
+		477460CD28D5950100AA185B /* CreateNews */ = {
+			isa = PBXGroup;
+			children = (
+				477460CE28D5951300AA185B /* CreateNewsController.swift */,
+				4753877028D5CE0200CDB693 /* CreateNewsViewModel.swift */,
+			);
+			path = CreateNews;
+			sourceTree = "<group>";
+		};
+		477460D228D5955300AA185B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4746524E28BE72A4008C6628 /* String+Ext.swift */,
+				472CD9C428C10BA900E20AAB /* UIImageView+Ext.swift */,
+				47A6756B28B7CAD600D709CA /* UIViewController+Ext.swift */,
+				4753876E28D5CC5A00CDB693 /* UIView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		477F758828B522E1007D502B = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +276,7 @@
 			children = (
 				477F75B228B52616007D502B /* Archive */,
 				477F75B328B52620007D502B /* MyNews */,
+				477460CD28D5950100AA185B /* CreateNews */,
 				477F75B528B52630007D502B /* Settings */,
 			);
 			path = Scenes;
@@ -369,11 +396,9 @@
 			children = (
 				4706E44B28C107D9009DCC83 /* Fonts */,
 				4706E46428C10903009DCC83 /* Fonts.swift */,
-				47A6756B28B7CAD600D709CA /* UIViewController+Ext.swift */,
+				477460D228D5955300AA185B /* Extension */,
 				4746523728BE606B008C6628 /* KeychainHelper.swift */,
-				472CD9C428C10BA900E20AAB /* UIImageView+Ext.swift */,
 				4746523928BE6460008C6628 /* UserDefaultsHelper.swift */,
-				4746524E28BE72A4008C6628 /* String+Ext.swift */,
 				4704403C28C0D5FA00647A1E /* LanguageHelper.swift */,
 			);
 			path = Helper;
@@ -638,6 +663,7 @@
 			files = (
 				472CD9C528C10BA900E20AAB /* UIImageView+Ext.swift in Sources */,
 				4746523A28BE6460008C6628 /* UserDefaultsHelper.swift in Sources */,
+				4753876F28D5CC5B00CDB693 /* UIView+Ext.swift in Sources */,
 				477F75D328B53606007D502B /* NetworkManager.swift in Sources */,
 				47A6756E28B7D96E00D709CA /* CategoryController.swift in Sources */,
 				4704403428C0D0D400647A1E /* SettingsController.swift in Sources */,
@@ -650,6 +676,7 @@
 				477F759528B522E1007D502B /* AppDelegate.swift in Sources */,
 				4704403D28C0D5FA00647A1E /* LanguageHelper.swift in Sources */,
 				477F75CB28B52AD6007D502B /* ArchiveCell.swift in Sources */,
+				477460CF28D5951300AA185B /* CreateNewsController.swift in Sources */,
 				4706E44A28C10382009DCC83 /* LangController.swift in Sources */,
 				477F75CF28B52BAD007D502B /* ArchiveViewModel.swift in Sources */,
 				477F759F28B522E1007D502B /* NYTimesNewsApp.xcdatamodeld in Sources */,
@@ -657,6 +684,7 @@
 				4706E46528C10903009DCC83 /* Fonts.swift in Sources */,
 				4746523828BE606B008C6628 /* KeychainHelper.swift in Sources */,
 				477F759728B522E1007D502B /* SceneDelegate.swift in Sources */,
+				4753877128D5CE0200CDB693 /* CreateNewsViewModel.swift in Sources */,
 				479E27F928C76CB1005C6B17 /* MyNewsController.swift in Sources */,
 				4746524F28BE72A4008C6628 /* String+Ext.swift in Sources */,
 				479E27FB28C76CEC005C6B17 /* MyNewsViewModel.swift in Sources */,
