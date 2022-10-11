@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vIQ-7Z-t8L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -508,6 +507,99 @@
             </objects>
             <point key="canvasLocation" x="1419" y="1905"/>
         </scene>
+        <!--Subscription Controller-->
+        <scene sceneID="9Yp-KU-GV2">
+            <objects>
+                <viewController storyboardIdentifier="SubscriptionController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ygh-YN-vv3" customClass="SubscriptionController" customModule="NYTimesNewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nta-bp-xDn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-t0-Su4">
+                                <rect key="frame" x="20" y="88.5" width="262" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPt-iX-hGG">
+                                <rect key="frame" x="294" y="84" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="19G-re-HhC"/>
+                                    <constraint firstAttribute="width" constant="100" id="1Hc-Lt-Uw1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="Ygh-YN-vv3" eventType="touchUpInside" id="I1g-Xj-raD"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esO-yV-A6i">
+                                <rect key="frame" x="20" y="144" width="374" height="419"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Subscription Pricing and Terms\nFor unlocking all features and content, you have to be premium member. It offers 3 auto renewable subscription options. $2.99 for 1 week, $7.99 for 1 month. Weekly subscription doen't have any trial period. It costs immediately $2.99, $7.99 subscription will start after 3-days free tria.\nEnd of trial and subscription renewal:\nThis price is for United States customers. Pricing in other countries may vary and actual charges may be converted to your local currency depending on the country of residence.\nPayment will be charged to iTunes Account at confirmation of purchase. \nSubscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. \nAccount will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal.\nSubscriptions may be managed by the user and auto-renewal may be turned off by going to the user’s Account Settings after purchase.\nAny unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.\nCanceling trial or subscription\nYou can turn off the auto-renew for the subscription whenever you want to through iTunes. Check https://support.apple.com/en-en/HT202039.\nTerms of Use: -termsURL-\nPrivacy Policy: -privacyURL-\n</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8u-cL-zZz" userLabel="ButtonWeekly">
+                                <rect key="frame" x="20" y="583" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4qk-I6-YIe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Weekly - $2.99">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="weeklyButtonTapped:" destination="Ygh-YN-vv3" eventType="touchUpInside" id="PDi-uy-dfx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSB-uW-wNd" userLabel="ButtonWeekly">
+                                <rect key="frame" x="20" y="648" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I3q-yh-Jgn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Monthly - $7.99">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="monthlyButtonTapped:" destination="Ygh-YN-vv3" eventType="touchUpInside" id="IRz-HY-jKj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jcD-nK-EaC"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="esO-yV-A6i" firstAttribute="height" secondItem="nta-bp-xDn" secondAttribute="height" multiplier="0.467634" id="1V6-Wc-URk"/>
+                            <constraint firstItem="jcD-nK-EaC" firstAttribute="trailing" secondItem="x8u-cL-zZz" secondAttribute="trailing" constant="20" id="9it-kt-ofR"/>
+                            <constraint firstItem="jcD-nK-EaC" firstAttribute="trailing" secondItem="FPt-iX-hGG" secondAttribute="trailing" constant="20" id="9sf-5i-bBf"/>
+                            <constraint firstItem="oeB-t0-Su4" firstAttribute="leading" secondItem="jcD-nK-EaC" secondAttribute="leading" constant="20" id="B4S-aH-ULV"/>
+                            <constraint firstItem="x8u-cL-zZz" firstAttribute="top" secondItem="esO-yV-A6i" secondAttribute="bottom" constant="20" id="C3Q-Mj-w2a"/>
+                            <constraint firstItem="esO-yV-A6i" firstAttribute="leading" secondItem="jcD-nK-EaC" secondAttribute="leading" constant="20" id="GSv-gP-KfF"/>
+                            <constraint firstItem="QSB-uW-wNd" firstAttribute="leading" secondItem="x8u-cL-zZz" secondAttribute="leading" id="MLp-ym-Wuy"/>
+                            <constraint firstItem="FPt-iX-hGG" firstAttribute="top" secondItem="jcD-nK-EaC" secondAttribute="top" constant="40" id="SR4-z5-Xxf"/>
+                            <constraint firstItem="QSB-uW-wNd" firstAttribute="trailing" secondItem="x8u-cL-zZz" secondAttribute="trailing" id="Tzj-2a-Vie"/>
+                            <constraint firstItem="oeB-t0-Su4" firstAttribute="centerY" secondItem="FPt-iX-hGG" secondAttribute="centerY" id="cDB-Tl-yfe"/>
+                            <constraint firstItem="jcD-nK-EaC" firstAttribute="trailing" secondItem="esO-yV-A6i" secondAttribute="trailing" constant="20" id="mh3-rr-bSw"/>
+                            <constraint firstItem="QSB-uW-wNd" firstAttribute="top" secondItem="x8u-cL-zZz" secondAttribute="bottom" constant="15" id="n6U-iC-u5e"/>
+                            <constraint firstItem="FPt-iX-hGG" firstAttribute="leading" secondItem="oeB-t0-Su4" secondAttribute="trailing" constant="12" id="oox-qm-4lM"/>
+                            <constraint firstItem="esO-yV-A6i" firstAttribute="top" secondItem="FPt-iX-hGG" secondAttribute="bottom" constant="20" id="qJR-vE-TXK"/>
+                            <constraint firstItem="x8u-cL-zZz" firstAttribute="leading" secondItem="jcD-nK-EaC" secondAttribute="leading" constant="20" id="zAZ-HM-A7m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="esO-yV-A6i" id="CnL-AP-JHK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKn-Y2-Hkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418.840579710145" y="2584.8214285714284"/>
+        </scene>
         <!--Lang Controller-->
         <scene sceneID="7LO-ES-Iag">
             <objects>
@@ -580,6 +672,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

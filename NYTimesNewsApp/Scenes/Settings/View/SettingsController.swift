@@ -37,10 +37,16 @@ extension SettingsController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller = storyboard?.instantiateViewController(withIdentifier: "\(LangController.self)") as! LangController
-        controller.callback = {
-            self.updateList()
+        if viewModel.items[indexPath.row].type == .langauge {
+            let controller = storyboard?.instantiateViewController(withIdentifier: "\(LangController.self)") as! LangController
+            controller.callback = {
+                self.updateList()
+            }
+            presentPanModal(controller)
+        } else {
+            let controller = storyboard?.instantiateViewController(withIdentifier: "\(SubscriptionController.self)") as! SubscriptionController
+            controller.modalPresentationStyle = .overFullScreen
+            present(controller, animated: true, completion: nil)
         }
-        presentPanModal(controller)
     }
 }

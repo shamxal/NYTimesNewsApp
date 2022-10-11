@@ -12,6 +12,7 @@ class SettingsViewModel {
     var items = [Settings]()
     
     func configList() {
-        items = [Settings(title: "language".localized(), type: .langauge)]
+        items = [Settings(title: "language".localized(), type: .langauge),
+                 Settings(title: "Subscription", type: .subscription)]
     }
 }

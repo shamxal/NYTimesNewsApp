@@ -9,6 +9,7 @@ import Foundation
 
 enum SettingsType {
     case langauge
+    case subscription
 }
 
 struct Settings {
